@@ -1,0 +1,45 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+   display: inline-flex;
+   padding: rem(13) rem(34);
+   white-space: nowrap;
+   border-radius: rem(50);
+   font-family: Nunito Sans;
+   font-size: rem(18);
+   line-height: math.div(21.6, 18);
+   transition: all 0.3s ease 0s;
+   cursor: pointer;
+   // .button__white
+   &__white {
+      color: #000;
+      border: 1px solid var(--main-bg-color);
+      @media (any-hover: hover) {
+         &:hover {
+            background: #fff4f8;
+            border: 1px solid #dd8e94;
+         }
+      }
+   }
+
+   // .button__pink
+
+   &__pink {
+      background: var(--main-bg-color);
+      color: #ffffff;
+      @media (any-hover: hover) {
+         &:hover {
+            background: #bc1340;
+         }
+      }
+      &:focus {
+         background: #910b2f;
+         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+      }
+   }
+   // .button__colorpink
+   &__colorpink {
+      color: var(--main-bg-color);
+   }
+}

@@ -1,0 +1,71 @@
+%ic {
+   font-family: "icons";
+   font-style: normal;
+   font-weight: normal;
+   font-variant: normal;
+   text-transform: none;
+   line-height: 1;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+[class*="_icon-"] {
+   &:before {
+      @extend %ic;
+      display: block;
+   }
+}
+
+._icon-check:before {
+   content: "\e911";
+ }
+ ._icon-location:before {
+   content: "\e910";
+ }
+ ._icon-arrow-bottom:before {
+   content: "\e900";
+ }
+ ._icon-calendare:before {
+   content: "\e901";
+ }
+ ._icon-clock:before {
+   content: "\e902";
+ }
+ ._icon-diet:before {
+   content: "\e903";
+ }
+ ._icon-eye:before {
+   content: "\e904";
+ }
+ ._icon-face-mask:before {
+   content: "\e905";
+ }
+ ._icon-flower:before {
+   content: "\e906";
+ }
+ ._icon-hand-cream:before {
+   content: "\e907";
+ }
+ ._icon-instagram:before {
+   content: "\e908";
+ }
+ ._icon-longArrow:before {
+   content: "\e909";
+ }
+ ._icon-lotus:before {
+   content: "\e90a";
+ }
+ ._icon-sand-clock:before {
+   content: "\e90b";
+ }
+ ._icon-search:before {
+   content: "\e90c";
+ }
+ ._icon-star:before {
+   content: "\e90d";
+ }
+ ._icon-weather:before {
+   content: "\e90e";
+ }
+ ._icon-whatsapp:before {
+   content: "\e90f";
+ }
