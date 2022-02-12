@@ -1,12 +1,98 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('html/_head.htm',{
-"title":"Главная"
-})
+
+<head>
+   <title>Главная</title>
+   <meta charset="UTF-8">
+   <meta name="format-detection" content="telephone=no">
+   <!-- <style>body{opacity: 0;}</style> -->
+   <link rel="stylesheet" href="css/style.min.css?_v=20220212174223">
+   <link rel="shortcut icon" href="favicon.ico">
+   <!-- <meta name="robots" content="noindex, nofollow"> -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
 <body>
    <div class="wrapper">
-      @@include('html/_header.htm',{})
+      <header class="header">
+
+         <div class="header__top top-header">
+            <div class="top-header__container">
+
+               <div class="top-header__items">
+
+                  <div class="top-header__item">
+                     <div class="top-header__location _icon-location"><span>г. Санкт-Петербург, ул. Лесная, д. 54</span>
+                     </div>
+                  </div>
+
+                  <div class="top-header__item">
+                     <div class="top-header__body body-top-header">
+                        <div id="scheme" class="body-top-header__visually _icon-eye"></div>
+
+
+                        <a href="tel:+70000000000" class="body-top-header__phone">+7 (000) 000-00-00</a>
+                        <div class="body-top-header__icons">
+                           <a href="" class="body-top-header__icon _icon-instagram"></a>
+                           <a href="" class="body-top-header__icon _icon-whatsapp"></a>
+                        </div>
+
+                     </div>
+                  </div>
+
+               </div>
+
+            </div>
+         </div> <!--  header__top top-header -->
+
+         <div class="header__main main-header">
+            <div class="main-header__container">
+
+
+               <div class="main-header__items">
+                  <button type="button" class="menu__icon icon-menu"><span></span></button>
+                  <div class="main-header__logo">
+                     <a href="" class="header__logo">
+                        <picture>
+                           <source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Картинка">
+                        </picture>
+                     </a>
+                  </div>
+
+                  <div class="main-header__links">
+                     <div class="main-header__menu menu">
+                        <nav data-da=".menu__body,991.98" class="menu__header">
+                           <ul class="menu__list">
+                              <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
+                              <li class="menu__item"><a href="" class="menu__link">Услуги</a></li>
+                              <li class="menu__item"><a href="" class="menu__link">Цены</a></li>
+                              <li class="menu__item"><a href="" class="menu__link">Специалисты</a></li>
+                              <li class="menu__item"><a href="" class="menu__link">Блог</a></li>
+                              <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+                           </ul>
+                        </nav>
+
+                        <nav hidden class="menu__body">
+
+                        </nav>
+
+                     </div>
+                  </div>
+
+
+                  <div class="main-header__buttons">
+                     <a href="" class="main-header__search _icon-search"></a>
+                     <a data-da=".menu__body,767.98,first" href=""
+                        class="main-header__button button button__white">Запись онлайн</a>
+                  </div>
+
+               </div><!--  main-header__items -->
+
+            </div>
+
+         </div>
+      </header>
+
       <main class="page">
 
          <div class="page__service service-main">
@@ -66,7 +152,9 @@
             </div>
 
             <div class="service-main__image-ibg">
-               <img src="@img/service/01.jpg" alt="картинка">
+               <picture>
+                  <source srcset="img/service/01.webp" type="image/webp"><img src="img/service/01.jpg" alt="картинка">
+               </picture>
             </div>
 
 
@@ -317,7 +405,9 @@
                               </div>
 
                               <div class="item-packages__image-ibg">
-                                 <img src="@img/packages/02.jpg" alt="Картинка">
+                                 <picture>
+                                    <source srcset="img/packages/02.webp" type="image/webp"><img
+                                       src="img/packages/02.jpg" alt="Картинка"></picture>
                               </div>
                            </div>
 
@@ -333,7 +423,9 @@
                               </div>
 
                               <div class="item-packages__image-ibg">
-                                 <img src="@img/packages/03.jpg" alt="Картинка">
+                                 <picture>
+                                    <source srcset="img/packages/03.webp" type="image/webp"><img
+                                       src="img/packages/03.jpg" alt="Картинка"></picture>
                               </div>
                            </div>
 
@@ -349,7 +441,9 @@
                               </div>
 
                               <div class="item-packages__image-ibg">
-                                 <img src="@img/packages/04.jpg" alt="Картинка">
+                                 <picture>
+                                    <source srcset="img/packages/04.webp" type="image/webp"><img
+                                       src="img/packages/04.jpg" alt="Картинка"></picture>
                               </div>
                            </div>
 
@@ -365,14 +459,20 @@
                               </div>
 
                               <div class="item-packages__image-ibg">
-                                 <img src="@img/packages/02.jpg" alt="Картинка">
+                                 <picture>
+                                    <source srcset="img/packages/02.webp" type="image/webp"><img
+                                       src="img/packages/02.jpg" alt="Картинка"></picture>
                               </div>
                            </div>
 
                         </div> <!-- packages__items -->
 
                      </div>
-                     <div class="packages__image-ibg"> <img src="@img/packages/01.jpg" alt="Картинка"></div>
+                     <div class="packages__image-ibg">
+                        <picture>
+                           <source srcset="img/packages/01.webp" type="image/webp"><img src="img/packages/01.jpg"
+                              alt="Картинка"></picture>
+                     </div>
 
 
                   </div> <!-- packages-spollers__body -->
@@ -401,7 +501,9 @@
                            <li class="promotion-spollers__item item-promotion">
                               <div class="item-promotion__body">
                                  <div class="item-promotion__image-ibg">
-                                    <img src="@img/promotion/01.jpg" alt="Картинка">
+                                    <picture>
+                                       <source srcset="img/promotion/01.webp" type="image/webp"><img
+                                          src="img/promotion/01.jpg" alt="Картинка"></picture>
                                  </div>
 
                                  <div class="item-promotion__content">
@@ -424,7 +526,9 @@
                            <li class="promotion-spollers__item item-promotion">
                               <div class="item-promotion__body">
                                  <div class="item-promotion__image-ibg">
-                                    <img src="@img/promotion/02.jpg" alt="Картинка">
+                                    <picture>
+                                       <source srcset="img/promotion/02.webp" type="image/webp"><img
+                                          src="img/promotion/02.jpg" alt="Картинка"></picture>
                                  </div>
 
                                  <div class="item-promotion__content">
@@ -446,7 +550,9 @@
                            <li class="promotion-spollers__item item-promotion">
                               <div class="item-promotion__body">
                                  <div class="item-promotion__image-ibg">
-                                    <img src="@img/promotion/03.jpg" alt="Картинка">
+                                    <picture>
+                                       <source srcset="img/promotion/03.webp" type="image/webp"><img
+                                          src="img/promotion/03.jpg" alt="Картинка"></picture>
                                  </div>
 
                                  <div class="item-promotion__content">
@@ -480,7 +586,9 @@
 
                <div class="questions__body body-questions">
                   <div class="questions__image-ibg">
-                     <img src="@img/questions/01.jpg" alt="Картинка">
+                     <picture>
+                        <source srcset="img/questions/01.webp" type="image/webp"><img src="img/questions/01.jpg"
+                           alt="Картинка"></picture>
                   </div>
                   <h2 class="body-questions__label">Ответьте на несколько вопросов и получите скидку или бесплатную
                      процедуру</h2>
@@ -551,7 +659,9 @@
 
                      <div class="care__slide slide-care three-sliders-main__slide">
                         <div class="slide-care__image-ibg three-sliders-main__image-ibg">
-                           <img src="@img/care/01.jpg" alt="Картинка">
+                           <picture>
+                              <source srcset="img/care/01.webp" type="image/webp"><img src="img/care/01.jpg"
+                                 alt="Картинка"></picture>
                         </div>
                         <div class="slide-care__text three-sliders-main__text">При первичном обращении в клинику
                            специалист проводит компьютерную
@@ -560,7 +670,9 @@
 
                      <div class="care__slide slide-care three-sliders-main__slide">
                         <div class="slide-care__image-ibg three-sliders-main__image-ibg">
-                           <img src="@img/care/02.jpg" alt="Картинка">
+                           <picture>
+                              <source srcset="img/care/02.webp" type="image/webp"><img src="img/care/02.jpg"
+                                 alt="Картинка"></picture>
                         </div>
                         <div class="slide-care__text">Инновационные кресла с четырьмя моторами позволят ощутить максимум
                            комфорта </div>
@@ -568,7 +680,9 @@
 
                      <div class="care__slide slide-care three-sliders-main__slide">
                         <div class="slide-care__image-ibg three-sliders-main__image-ibg">
-                           <img src="@img/care/03.jpg" alt="Картинка">
+                           <picture>
+                              <source srcset="img/care/03.webp" type="image/webp"><img src="img/care/03.jpg"
+                                 alt="Картинка"></picture>
                         </div>
                         <div class="slide-care__text">При первичном обращении в клинику специалист проводит компьютерную
                            диагностику аппаратом Janus</div>
@@ -576,7 +690,9 @@
 
                      <div class="care__slide slide-care three-sliders-main__slide">
                         <div class="slide-care__image-ibg three-sliders-main__image-ibg">
-                           <img src="@img/care/01.jpg" alt="Картинка">
+                           <picture>
+                              <source srcset="img/care/01.webp" type="image/webp"><img src="img/care/01.jpg"
+                                 alt="Картинка"></picture>
                         </div>
                         <div class="slide-care__text">Мы используем премиальную космецевтику Egis</div>
                      </div>
@@ -613,7 +729,9 @@
 
                      <div class="gallery__slide slide-gallery three-sliders-main__slide">
                         <div class="slide-gallery__image-ibg three-sliders-main__image-ibg">
-                           <img src="@img/gallery/01.jpg" alt="Картинка">
+                           <picture>
+                              <source srcset="img/gallery/01.webp" type="image/webp"><img src="img/gallery/01.jpg"
+                                 alt="Картинка"></picture>
                         </div>
                         <!-- <div class="slide-gallery__text three-sliders-main__text">При первичном обращении в клинику
                            специалист проводит компьютерную
@@ -622,7 +740,9 @@
 
                      <div class="gallery__slide slide-gallery three-sliders-main__slide">
                         <div class="slide-gallery__image-ibg three-sliders-main__image-ibg">
-                           <img src="@img/gallery/02.jpg" alt="Картинка">
+                           <picture>
+                              <source srcset="img/gallery/02.webp" type="image/webp"><img src="img/gallery/02.jpg"
+                                 alt="Картинка"></picture>
                         </div>
                         <!-- <div class="slide-gallery__text">Инновационные кресла с четырьмя моторами позволят ощутить максимум
                            комфорта </div> -->
@@ -630,7 +750,9 @@
 
                      <div class="gallery__slide slide-gallery three-sliders-main__slide">
                         <div class="slide-gallery__image-ibg three-sliders-main__image-ibg">
-                           <img src="@img/gallery/03.jpg" alt="Картинка">
+                           <picture>
+                              <source srcset="img/gallery/03.webp" type="image/webp"><img src="img/gallery/03.jpg"
+                                 alt="Картинка"></picture>
                         </div>
                         <!-- <div class="slide-gallery__text">При первичном обращении в клинику специалист проводит компьютерную
                            диагностику аппаратом Janus</div> -->
@@ -638,7 +760,9 @@
 
                      <div class="gallery__slide slide-gallery three-sliders-main__slide">
                         <div class="slide-gallery__image-ibg three-sliders-main__image-ibg">
-                           <img src="@img/gallery/01.jpg" alt="Картинка">
+                           <picture>
+                              <source srcset="img/gallery/01.webp" type="image/webp"><img src="img/gallery/01.jpg"
+                                 alt="Картинка"></picture>
                         </div>
                         <!-- <div class="slide-gallery__text">Мы используем премиальную космецевтику Egis</div> -->
                      </div>
@@ -675,7 +799,9 @@
 
                      <div class="modern__slide slide-modern three-sliders-main__slide">
                         <div class="slide-modern__image-ibg three-sliders-main__image-ibg">
-                           <img src="@img/modern/01.jpg" alt="Картинка">
+                           <picture>
+                              <source srcset="img/modern/01.webp" type="image/webp"><img src="img/modern/01.jpg"
+                                 alt="Картинка"></picture>
                         </div>
                         <!-- <div class="slide-modern__text three-sliders-main__text">При первичном обращении в клинику
                            специалист проводит компьютерную
@@ -684,7 +810,9 @@
 
                      <div class="modern__slide slide-modern three-sliders-main__slide">
                         <div class="slide-modern__image-ibg three-sliders-main__image-ibg">
-                           <img src="@img/modern/02.jpg" alt="Картинка">
+                           <picture>
+                              <source srcset="img/modern/02.webp" type="image/webp"><img src="img/modern/02.jpg"
+                                 alt="Картинка"></picture>
                         </div>
                         <!-- <div class="slide-modern__text">Инновационные кресла с четырьмя моторами позволят ощутить максимум
                            комфорта </div> -->
@@ -692,7 +820,9 @@
 
                      <div class="modern__slide slide-modern three-sliders-main__slide">
                         <div class="slide-modern__image-ibg three-sliders-main__image-ibg">
-                           <img src="@img/modern/03.jpg" alt="Картинка">
+                           <picture>
+                              <source srcset="img/modern/03.webp" type="image/webp"><img src="img/modern/03.jpg"
+                                 alt="Картинка"></picture>
                         </div>
                         <!-- <div class="slide-modern__text">При первичном обращении в клинику специалист проводит компьютерную
                            диагностику аппаратом Janus</div> -->
@@ -700,7 +830,9 @@
 
                      <div class="modern__slide slide-modern three-sliders-main__slide">
                         <div class="slide-modern__image-ibg three-sliders-main__image-ibg">
-                           <img src="@img/modern/01.jpg" alt="Картинка">
+                           <picture>
+                              <source srcset="img/modern/01.webp" type="image/webp"><img src="img/modern/01.jpg"
+                                 alt="Картинка"></picture>
                         </div>
                         <!-- <div class="slide-modern__text">Мы используем премиальную космецевтику Egis</div> -->
                      </div>
@@ -901,7 +1033,9 @@
          <section class="page__procedure procedure">
 
             <div class="procedure__image-ibg">
-               <img src="@img/procedure/01.jpg" alt="Картинка">
+               <picture>
+                  <source srcset="img/procedure/01.webp" type="image/webp"><img src="img/procedure/01.jpg"
+                     alt="Картинка"></picture>
             </div>
 
             <div class="procedure__container">
@@ -922,7 +1056,9 @@
 
                <div class="lifting__about about-lifting">
                   <div class="about-lifting__image-ibg">
-                     <img src="@img/lifting/01.jpg" alt="Картинка">
+                     <picture>
+                        <source srcset="img/lifting/01.webp" type="image/webp"><img src="img/lifting/01.jpg"
+                           alt="Картинка"></picture>
                   </div>
                   <div class="about-lifting__spollers">
 
@@ -1178,7 +1314,9 @@
                   </div>
 
                   <div class="device__image-ibg">
-                     <img src="@img/device/01.jpg" alt="Картинка">
+                     <picture>
+                        <source srcset="img/device/01.webp" type="image/webp"><img src="img/device/01.jpg"
+                           alt="Картинка"></picture>
                   </div>
 
                </div>
@@ -1214,7 +1352,9 @@
 
                      <div class="specialists__slide slide-specialists">
                         <a href="" class="slide-specialists__image-ibg">
-                           <img src="@img/specialists/01.png" alt="Картинка">
+                           <picture>
+                              <source srcset="img/specialists/01.webp" type="image/webp"><img
+                                 src="img/specialists/01.png" alt="Картинка"></picture>
                         </a>
                         <a href="" class="slide-specialists__name">Екатерина Иванова</a>
                         <div class="slide-specialists__text">Главный врач клиники, специалист эстетической и аппаратной
@@ -1223,7 +1363,9 @@
 
                      <div class="specialists__slide slide-specialists">
                         <a href="" class="slide-specialists__image-ibg">
-                           <img src="@img/specialists/02.png" alt="Картинка">
+                           <picture>
+                              <source srcset="img/specialists/02.webp" type="image/webp"><img
+                                 src="img/specialists/02.png" alt="Картинка"></picture>
                         </a>
                         <a href="" class="slide-specialists__name">Екатерина Иванова</a>
                         <div class="slide-specialists__text">Главный врач клиники, специалист эстетической и аппаратной
@@ -1232,7 +1374,9 @@
 
                      <div class="specialists__slide slide-specialists">
                         <a href="" class="slide-specialists__image-ibg">
-                           <img src="@img/specialists/03.png" alt="Картинка">
+                           <picture>
+                              <source srcset="img/specialists/03.webp" type="image/webp"><img
+                                 src="img/specialists/03.png" alt="Картинка"></picture>
                         </a>
                         <a href="" class="slide-specialists__name">Екатерина Иванова</a>
                         <div class="slide-specialists__text">Главный врач клиники, специалист эстетической и аппаратной
@@ -1241,7 +1385,9 @@
 
                      <div class="specialists__slide slide-specialists">
                         <a href="" class="slide-specialists__image-ibg">
-                           <img src="@img/specialists/04.png" alt="Картинка">
+                           <picture>
+                              <source srcset="img/specialists/04.webp" type="image/webp"><img
+                                 src="img/specialists/04.png" alt="Картинка"></picture>
                         </a>
                         <a href="" class="slide-specialists__name">Екатерина Иванова</a>
                         <div class="slide-specialists__text">Главный врач клиники, специалист эстетической и аппаратной
@@ -1250,7 +1396,9 @@
 
                      <div class="specialists__slide slide-specialists">
                         <a href="" class="slide-specialists__image-ibg">
-                           <img src="@img/specialists/01.png" alt="Картинка">
+                           <picture>
+                              <source srcset="img/specialists/01.webp" type="image/webp"><img
+                                 src="img/specialists/01.png" alt="Картинка"></picture>
                         </a>
                         <a href="" class="slide-specialists__name">Екатерина Иванова</a>
                         <div class="slide-specialists__text">Главный врач клиники, специалист эстетической и аппаратной
@@ -1378,10 +1526,109 @@
          </section>
 
       </main>
-      @@include('html/_footer.htm',{})
+      <footer class="footer">
+         <div class="footer__container">
+
+            <div class="footer__items">
+
+
+               <div class="footer__item">
+                  <a href="" class="footer__logo">
+                     <picture>
+                        <source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Картинка">
+                     </picture>
+                  </a>
+
+                  <div data-da=".footer__container,992,last" class="footer__copy copy">
+                     <p>2021 все права защищены</p>
+                     <a href="" class="copy__button">Политика конфиденциальности</a>
+                  </div>
+               </div>
+
+
+               <div data-spollers="992,max" class="footer__spollers spollers-footer">
+
+                  <div class="spollers-footer__point">
+                     <button type="button" data-spoller class="spollers-footer__title">Меню:</button>
+                     <div class="spollers-footer__body">
+                        <ul class="spollers-footer__list">
+                           <li class="spollers-footer__item">
+                              <a href="" class="spollers-footer__link">О нас</a>
+                           </li>
+
+                           <li class="spollers-footer__item">
+                              <a href="" class="spollers-footer__link">Услуги</a>
+                           </li>
+
+                           <li class="spollers-footer__item">
+                              <a href="" class="spollers-footer__link">Цены</a>
+                           </li>
+
+                           <li class="spollers-footer__item">
+                              <a href="" class="spollers-footer__link">Специалисты</a>
+                           </li>
+
+                           <li class="spollers-footer__item">
+                              <a href="" class="spollers-footer__link">Блог</a>
+                           </li>
+
+                           <li class="spollers-footer__item">
+                              <a href="" class="spollers-footer__link">Контакты</a>
+                           </li>
+
+                        </ul>
+
+                     </div>
+                  </div>
+
+
+                  <div data-spollers="992,max" class="footer__spollers spollers-footer">
+                     <div class="spollers-footer__point">
+                        <button type="button" data-spoller
+                           class="spollers-footer__title title-contacts">Контакты:</button>
+                        <div data-da=".footer__item, 992,1" class="spollers-footer__body">
+
+                           <a href="tel:+700000000" class="spollers-footer__phone">+7 (000) 000-00-00</a>
+
+                           <a href="mailto:info@mail.ru" class="spollers-footer__mail">info@mail.ru</a>
+
+                           <p>г. Санкт-Петербург, ул. Лесная, д. 54</p>
+
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+
+               <div class="footer__social social-footer">
+                  <div class="social-footer__title">Мы в соц. сетях:</div>
+                  <div class="social-footer__items">
+                     <a href="" class="social-footer__item _icon-instagram"></a>
+                     <a href="" class="social-footer__item _icon-whatsapp"></a>
+                  </div>
+
+                  <div id="footer-scheme" class="social-footer__visually _icon-eye">Версия для слабовидящих</div>
+               </div>
+
+            </div>
+
+         </div>
+      </footer>
+
    </div>
-   @@include('html/_popup.htm',{})
-   @@include('html/_js.htm',{})
+   <!--
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+
+   <script src="js/app.min.js?_v=20220212174223"></script>
 </body>
 
 </html>
